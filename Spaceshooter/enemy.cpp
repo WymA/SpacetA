@@ -1,4 +1,4 @@
-#include "c_enemy.h"
+#include "enemy.h"
 
 HGE* c_enemy::hge = 0;
 

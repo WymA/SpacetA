@@ -3,15 +3,15 @@
 #include <hgevector.h>
 #include <list>
 
-#include "c_player.h"
-#include "c_bullet.h"
-#include "c_enemy.h"
+#include "player.h"
+#include "bullet.h"
+#include "enemy.h"
 
 HGE*	hge	= NULL;
 
-#define BACKGROUND_SCROLLING_SPEED	0.105f
-#define BACKGROUND_ALPHA_MIN		50
-#define BACKGROUND_ALPHA_MAX		255
+const double BACKGROUND_SCROLLING_SPEED = 0.105 ;
+const int	 BACKGROUND_ALPHA_MIN		= 50 ;
+const int	 BACKGROUND_ALPHA_MAX		= 255 ;
 
 //Enemies
 std::list<c_enemy*> Enemies;
@@ -140,7 +140,7 @@ bool FrameFunc()
 	if(hge->Input_KeyDown(HGEK_SPACE))
 	{
 		//Single shot
-		c_bullet* Bullet = new c_bullet(Player1->GetPosition() + hgeVector(16,0), hgeVector(15,0), g_tBullet, 100);
+		c_bullet* Bullet = new c_bullet(Player1->GetPosition() + hgeVector(16,0), hgeVector(15,0), g_tBullet, 10);
 						
 		Bullets.push_back(Bullet);
 
@@ -312,6 +312,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 		hge->Effect_PlayEx(g_eBGMusic2, 100, 0, 0, true);
 		hge->Effect_PlayEx(g_eBGMusic3, 10, 0, 0, true);
 
+		//////////////////////////////////////////////////////////////////////
+		// HGE System Start
 		hge->System_Start();
 
 		//Cleanup..

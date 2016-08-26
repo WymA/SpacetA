@@ -81,15 +81,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="c_bullet.cpp" />
-    <ClCompile Include="c_enemy.cpp" />
-    <ClCompile Include="c_player.cpp" />
+    <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="enemy.cpp" />
+    <ClCompile Include="player.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include=".\c_bullet.h" />
-    <ClInclude Include="c_enemy.h" />
-    <ClInclude Include="c_player.h" />
+    <ClInclude Include="bullet.h" />
+    <ClInclude Include="enemy.h" />
+    <ClInclude Include="player.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.md" />

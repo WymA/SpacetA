@@ -1,4 +1,4 @@
-#include "c_player.h"
+#include "player.h"
 
 HGE* c_player::hge = 0;
 

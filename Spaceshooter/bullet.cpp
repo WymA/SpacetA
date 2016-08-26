@@ -1,4 +1,4 @@
-#include "c_bullet.h"
+#include "bullet.h"
 
 HGE* c_bullet::hge = 0;
 
