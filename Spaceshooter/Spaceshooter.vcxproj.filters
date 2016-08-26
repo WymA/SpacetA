@@ -18,24 +18,24 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="c_player.cpp">
+    <ClCompile Include="bullet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="c_bullet.cpp">
+    <ClCompile Include="enemy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="c_enemy.cpp">
+    <ClCompile Include="player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="c_player.h">
+    <ClInclude Include="bullet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include=".\c_bullet.h">
+    <ClInclude Include="enemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="c_enemy.h">
+    <ClInclude Include="player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
